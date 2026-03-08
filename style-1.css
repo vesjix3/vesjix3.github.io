@@ -63,3 +63,46 @@ footer p {
 }
 
 
+/* ===== RESPONSIVE 1440px ===== */
+@media (min-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .social-links a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* ===== RESPONSIVE 375px ===== */
+@media (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  .social-links {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .social-links a {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
