@@ -8,12 +8,23 @@ body {
 
 p {
   color: #C4BCBA;
+  background-color: #923A3A;
+}
+
+h1 {
+  color: #BF3535;
+  background: rgba(246, 221, 221, 0.33);
+  text-align: center;
+  margin-top: 20px;
+}
+h2,h3 {
+  color: #B12626;
 }
 
 /* Footer */
 footer {
   background-color: #2c3e50;
-  color: white;
+  color: #C4BCBA;
   padding: 30px 20px;
   text-align: center;
   margin-top: 40px;
@@ -47,3 +58,5 @@ footer p {
 .social-links a:hover {
   background-color: #e74c3c;
 }
+
+
