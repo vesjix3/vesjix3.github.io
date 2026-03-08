@@ -9,10 +9,16 @@ body {
 p {
   color: #C4BCBA;
   background-color: #923A3A;
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 15px;
 }
 ul {
   color: #C4BCBA;
   background-color: #923A3A;
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 15px;
 }
 
 h1 {
@@ -22,13 +28,18 @@ h1 {
   background-size: cover;
   background-position: center;
   text-align: center;
-  margin-top: 20px;
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 15px;
 }
 h2,h3 {
   color: #B12626;
+  max-width: 200px;
+  margin: 5px auto;
+  margin-left: 245px;
 }
 
-/* Footer */
+
 footer {
   background-color: #923A3A;
   color: #C4BCBA;
@@ -63,7 +74,7 @@ footer p {
 }
 
 
-/* ===== RESPONSIVE 1440px ===== */
+
 @media (min-width: 1440px) {
   body {
     font-size: 16px;
@@ -80,7 +91,7 @@ footer p {
   }
 }
 
-/* ===== RESPONSIVE 375px ===== */
+
 @media (max-width: 375px) {
   body {
     font-size: 12px;
