@@ -38,16 +38,17 @@ ul {
 
 h1 {
   color: #BF3535;
-  font-size: 2rem;
+
   text-align: center;
   background-color: rgba(210, 197, 197, 0.33);
-  padding: 20px 90px;
+  padding: 20px 290px;
   margin: 0;
+  font-size: xxx-large;
 }
 
 h2,h3 {
   color: #B12626;
-  max-width: 200px;
+  max-width: 250px;
   margin-top: 15px;
   margin-left: 20px;
 }
@@ -82,9 +83,10 @@ footer p {
 .social-links a {
   color: #923A3A;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 10px 15px;
   background-color: #a14c4c;
   border-radius: 5px;
+  font-size: 1.5em;
 }
 
 
@@ -101,7 +103,7 @@ footer p {
 
   .social-links a {
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.5em;
   }
 }
 
@@ -127,7 +129,7 @@ footer p {
 
   .social-links a {
     padding: 6px 8px;
-    font-size: 0.8rem;
+    font-size: 1.2em;
 
   }
 }

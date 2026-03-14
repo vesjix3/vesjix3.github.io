@@ -7,67 +7,79 @@ body {
 
 .container {
   max-width: 1300px;
-  margin-right: 20px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .content {
   display: flex;
   flex-direction: row-reverse;
+  gap: 60px;
+  margin-bottom: 40px;
 }
 
 
 p {
   color: #DBD6D9;
-  background-color: #9e0bbb;
+  background: linear-gradient(to right, #ba043f, #e83e77);
   /* margin: right 1000px; */
-  float: right;
+  /*float: right;*/
   padding: 15px;
 }
 
 h1 {
-  color: #9e0bbb;
-  margin-left: 850px;
+  color: #BC0441;
+  margin-left: 750px;
+  font-size: xxx-large;
 
 }
 h2,h3 {
-  color: #9e0bbb;
+  color: #BC0441;
 
 }
 
 .content-left {
   color: #DBD6D9;
-  background-color:#9e0bbb;
-  /* background: linear-gradient(to right, #811818, #9e0bbb); */
-  margin-left: 200px;
-  width: 5500px;
-  .content-left-im {
-    /*img: url('assets/image.jpg');*/
+  /*background-color:#BC0441;*/
+   background: linear-gradient(to right, #ba043f, #e83e77);
+  margin-left: 100px;
+  width: 10000px;
+  padding-top: 70px;
 
-
-  }
-  h2 {
+  h3 {
     color: #DBD6D9;
-    background-color:#9e0bbb;
+    margin-left: 20px;
+    font-size: x-large;
+
+  }
+  .content-left-img {
+    background-image: url('assets/fioletowe.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-left: -60px;
+    margin-right: -60px;
+
   }
 
+  }
 
-}
 
 .content-right {
-  margin-left: 220px;
+  margin-left: 130px;
 
 }
 
 ul {
-
   color: #DBD6D9;
+  font-size: large;
 }
 
 footer {
-  background-color: #9e0bbb;
+  background: linear-gradient(to right, #ba043f, #e83e77);
   color: #DBD6D9;
-  padding: 30px 20px;
+  padding: 40px 250px;
   text-align: center;
   margin-top: 40px;
 }
@@ -91,11 +103,12 @@ footer p {
 }
 
 .social-links a {
-  color: #9e0bbb;
+  color: #DBD6D9;
   text-decoration: none;
   padding: 8px 12px;
-  background-color: #9e0bbb;
+  background-color: #BC0441;
   border-radius: 5px;
+  font-size: 1.5em;
 }
 
 
