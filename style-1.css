@@ -12,12 +12,22 @@ body {
 }
 
 p {
+  font-family: "Times New Roman", Times, serif;
   color: #C4BCBA;
   background-color: #923A3A;
   margin: 10px 0;
   padding: 15px;
 }
+.paragraph {
+
+  border: 1px dotted white;
+}
+.listborder {
+  border: 1px dotted white;
+
+}
 ul {
+  font-family: "Times New Roman", Times, serif;
   color: #C4BCBA;
   background-color: #923A3A;
   margin: 10px 0;
@@ -38,7 +48,7 @@ ul {
 
 h1 {
   color: #BF3535;
-
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: rgba(210, 197, 197, 0.33);
   padding: 20px 290px;
@@ -47,6 +57,7 @@ h1 {
 }
 
 h2,h3 {
+  font-family: "Times New Roman", Times, serif;
   color: #B12626;
   max-width: 250px;
   margin-top: 15px;
