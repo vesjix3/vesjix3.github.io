@@ -1,0 +1,98 @@
+body {
+  background-color: #96ceec;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  background: #7cb4d2;
+  padding: 20px;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#search input {
+  width: 100%;
+  height: 35px;
+}
+
+#add-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+}
+
+#add {
+  flex: 1;
+}
+
+#data {
+  width: 240px;
+  padding: 0;
+}
+
+#add input,
+#data input {
+  width: 100%;
+  height: 35px;
+}
+
+#tekst {
+  padding: 12px;
+}
+
+#task-list {
+  min-height: 300px;
+  margin: 0;
+  padding: 16px 34px;
+  font-size: 20px;
+  background: #ffffff;
+
+}
+
+#task-list li {
+  margin-bottom: 10px;
+}
+
+#actions {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+#save,
+#delete {
+  flex: 1;
+}
+
+#save button,
+#delete button {
+  width: 100%;
+  height: 35px;
+}
+
+h1 {
+  color: #45616a;
+  text-align: left;
+  font-size: 40px;
+}
