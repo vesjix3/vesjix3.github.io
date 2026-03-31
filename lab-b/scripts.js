@@ -151,8 +151,14 @@ class Todo {
             this.update(task.id, inputText.value, inputDate.value);
         };
 
-        inputText.addEventListener('blur', save);
-        inputDate.addEventListener('blur', save);
+
+        li.addEventListener('focusout', (e) => {
+            if (!li.contains(e.relatedTarget)) save();
+        });
+
+        inputText.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') save();
+        });
 
         li.append(inputText, inputDate, btn);
         inputText.focus();
