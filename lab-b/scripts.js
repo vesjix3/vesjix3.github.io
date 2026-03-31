@@ -48,8 +48,9 @@ class Todo {
     }
 
     get filteredTasks() {
-        if (this.term === '') return this.tasks;
-        return this.tasks.filter(t => t.text.toLowerCase().includes(this.term.toLowerCase()));
+        const q = this.term.trim();
+        if (q.length < 2) return this.tasks;
+        return this.tasks.filter(t => t.text.toLowerCase().includes(q.toLowerCase()));
     }
 
     save() {
@@ -86,7 +87,7 @@ class Todo {
         return d >= now;
     }
 
-    draw() {
+    draw() { //przy tym troche czat pomagal
         const list = document.getElementById('task-list');
         list.innerHTML = '';
 
