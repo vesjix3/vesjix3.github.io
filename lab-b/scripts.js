@@ -64,6 +64,7 @@ class Todo {
 
     highlight(text, term) {
         if (!term || term === '') return text;
+        if (!term || term === '' || term.length < 2) return text;
         let result = '';
         let termIndex = 0;
         for (let i = 0; i < text.length; i++) {
@@ -121,7 +122,7 @@ class Todo {
             list.appendChild(li);
         });
     }
-    startEdit(li, task) {
+    startEdit(li, task) {  //pomagal czat
         if (li.querySelector('input')) return;
         li.innerHTML = '';
 
