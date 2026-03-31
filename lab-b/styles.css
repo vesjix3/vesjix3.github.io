@@ -64,30 +64,53 @@ body {
 #task-list {
   min-height: 300px;
   margin: 0;
-  padding: 16px 34px;
+  padding: 16px;
   font-size: 20px;
   background: #ffffff;
-
+  list-style: none;
 }
 
 #task-list li {
   margin-bottom: 10px;
 }
 
-#actions {
+.task-item {
   display: flex;
+  align-items: center;
   gap: 12px;
-  padding: 12px;
+  padding: 10px 12px;
+  border: 1px solid #d8e2e8;
+  border-radius: 8px;
 }
 
-#save,
-#delete {
+.task-text {
   flex: 1;
 }
 
-#save button,
-#delete button {
-  width: 100%;
+.task-date {
+  min-width: 170px;
+  font-size: 15px;
+  color: #45616a;
+}
+
+.task-delete {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+#save {
+  padding:12px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#save button {
+  width: 50%;
   height: 35px;
 }
 
