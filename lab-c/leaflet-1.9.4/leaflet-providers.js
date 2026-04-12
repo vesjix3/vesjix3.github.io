@@ -1,10 +1,10 @@
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
-		define(['boilerplate-c/leaflet-1.9.4/leaflet'], factory);
+		define(['leaflet-1.9.4/leaflet'], factory);
 	} else if (typeof modules === 'object' && module.exports) {
 		// define a Common JS module that relies on 'leaflet'
-		module.exports = factory(require('boilerplate-c/leaflet-1.9.4/leaflet'));
+		module.exports = factory(require('leaflet-1.9.4/leaflet'));
 	} else {
 		// Assume Leaflet is loaded into global object L already
 		factory(L);
