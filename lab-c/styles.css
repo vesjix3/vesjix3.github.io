@@ -32,6 +32,13 @@ body {
 }
 
 
+#rasterMap {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  display: none;
+}
+
 #game-area {
   display: flex;
   gap: 30px;
