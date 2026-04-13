@@ -10,6 +10,7 @@
     <script src="leaflet-1.9.4/leaflet-src.js"></script>
     <script src="leaflet-1.9.4/leaflet-providers.js"></script>
     <script src="leaflet-1.9.4/leaflet-image.js"></script>
+    <script src="script.js"></script>
     <style>
         #map {
             width: 600px;
@@ -28,10 +29,26 @@
 
 <div id="map"></div>
 
-<button id="getLocation" onclick="getLocation()">Get Location</button>
-<button id="saveButton">Save Raster Map</button>
-<strong>Latitude:</strong> <span id="latitude"></span><br>
-<strong>Longitude:</strong> <span id="longitude"></span><br>
+
+<div id="game-area">
+    <div id="table-area">
+        <div id="controls">
+
+            <button id="getLocation" onclick="getLocation()">Get Location</button>
+            <button id="saveButton">Save Raster Map</button>
+
+        </div>
+
+        <div id="table"></div>
+    </div>
+    <div id="board-area">
+
+        <div id="board"></div>
+    </div>
+</div>
+
+
+
 <br>
 
 <canvas id="rasterMap" width="300" height="150"></canvas>
