@@ -10,40 +10,50 @@
     <script src="leaflet-1.9.4/leaflet-src.js"></script>
     <script src="leaflet-1.9.4/leaflet-providers.js"></script>
     <script src="leaflet-1.9.4/leaflet-image.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
     <style>
         #map {
-            width: 600px;
-            height: 300px;
+            width: 1000px;
+            height: 480px;
             border: 1px solid black;
+            margin-right: 50px;
         }
 
         #rasterMap {
-            width: 300px;
-            height: 150px;
+            width: 1000px;
+            height: 480px;
             border: 1px solid black;
+            display: none;
         }
     </style>
 </head>
 <body>
 
-<div id="map"></div>
+<div id="map-board-row">
+    <div id="map"></div>
+    <div id="board-area">
+
+        <div id="board"></div>
+    </div>
+</div>
 
 
 <div id="game-area">
     <div id="table-area">
         <div id="controls">
 
+
+
             <button id="getLocation" onclick="getLocation()">Get Location</button>
             <button id="saveButton">Save Raster Map</button>
 
+            <div id="positionInfo">
+                <strong>Latitude:</strong> <span id="latitude"></span><br>
+                <strong>Longitude:</strong> <span id="longitude"></span><br>
+            </div>
         </div>
 
         <div id="table"></div>
-    </div>
-    <div id="board-area">
-
-        <div id="board"></div>
     </div>
 </div>
 
@@ -53,16 +63,26 @@
 
 <canvas id="rasterMap" width="300" height="150"></canvas>
 
+
 <script>
     let map = L.map('map').setView([53.430127, 14.564802], 18);
     L.tileLayer.provider('OpenStreetMap.DE').addTo(map);
     L.tileLayer.provider('Esri.WorldImagery').addTo(map);
+
+
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+        iconUrl: 'assets/marker-icon.png',
+        iconRetinaUrl: 'assets/marker-icon-2x.png',
+        shadowUrl: 'assets/marker-shadow.png'
+    });
+
     let marker = L.marker([53.430127, 14.564802]).addTo(map);
-    marker.bindPopup("<strong>Hello!</strong><br>This is a popup.");
+    marker.bindPopup("<strong>hejka!</strong><br>jestes tutaj!");
 
     document.getElementById("saveButton").addEventListener("click", function() {
         leafletImage(map, function (err, canvas) {
-            // here we have the canvas
+
             let rasterMap = document.getElementById("rasterMap");
             let rasterContext = rasterMap.getContext("2d");
 
@@ -86,14 +106,20 @@
         });
     });
 </script>
+
+
 <script>
     function getLocation() {
         if (! navigator.geolocation) {
             alert("Sorry, no geolocation available for you!");
+            return;
         }
         navigator.geolocation.getCurrentPosition((position) => {
+            let lat = position.coords.latitude;
+            let lon = position.coords.longitude;
             document.getElementById("latitude").innerText = position.coords.latitude;
             document.getElementById("longitude").innerText = position.coords.longitude;
+
         }, (positionError) => {
             console.error(positionError);
         }, {
