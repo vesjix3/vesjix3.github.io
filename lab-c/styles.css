@@ -10,9 +10,14 @@ body {
   flex-wrap: wrap;
   width: fit-content;
   margin: 0 auto;
+  gap: 16px;
 }
 
-
+#map {
+  width: 1000px;
+  height: 480px;
+  border: 1px solid black;
+}
 
 #controls {
   margin: 8px 0;
@@ -41,14 +46,32 @@ body {
   margin-top: 30px;
 }
 
-#table {
+#raster-table-row {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: 500px;
-  background: #c9a8e0;
-  border: 2px #7a4fa3;
+  align-items: flex-start;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 70px;
+}
 
+#rasterMap {
+  width: 1000px;
+  height: 480px;
+  border: 1px solid black;
+  flex: 0 0 auto;
+  display: block;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(4, 120px);
+  gap: 0;
+  width: 1000px;
+  height: 480px;
+  flex: 0 0 auto;
+  background: #c9a8e0;
+  border: 2px solid #7a4fa3;
 
 }
 
@@ -58,13 +81,11 @@ body {
   grid-template-rows: repeat(4, 120px);
   width: 1000px;
   height: 480px;
+  flex: 0 0 auto;
   background: #e8d5f5;
   border: 2px solid #7a4fa3;
-  margin-left: 50px;
 
 }
-
-
 
 
 .puzzle-piece {
@@ -82,15 +103,24 @@ body {
 }
 
 .board-slot {
-  width: 80px;
-  height: 80px;
+  width: 250px;
+  height: 120px;
   border: 1px dashed #999;
   box-sizing: border-box;
   background-color: rgba(255,255,255,0.3);
-  position: relative;
 }
 
 .board-slot.correct {
   border: 2px solid #22aa22;
   background-color: rgba(100, 255, 100, 0.2);
 }
+
+#positionInfo {
+  line-height: 1.6;
+}
+
+#gameStatus {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
