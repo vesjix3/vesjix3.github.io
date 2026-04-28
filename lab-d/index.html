@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - PTW LAB C</title>
+    <title>Hanna Druzga (57893) - PTW LAB D</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+<!--https://api.openweathermap.org/data/2.5/forecast?q=Szczecin&appid=1d8da1dd0ec597aa0b3293b46b291cf4-->
+
+
+
+
+<div class="container">
+    <div class="top-bar">
+        <input type="text" placeholder="Wyszukaj miasto" id="cityInput">
+        <button id="weatherBtn">Pogoda</button>
+    </div>
+
+    <section class="weather-main">
+        <div class="left-panel">
+            <div class="city"></div>
+            <div class="date"></div>
+            <div class="time"></div>
+            <div class="status"></div>
+        </div>
+
+        <div class="center-panel"></div>
+
+        <div class="right-panel">
+            <div class="details"></div>
+            <div class="temp"></div>
+        </div>
+    </section>
+
+    <section class="forecast"></section>
+</div>
+
 
 </body>
 </html>
