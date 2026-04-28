@@ -1,17 +1,10 @@
 
-
-html, body {
-  min-height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 body {
   background-image: url("clouds.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 30px 16px;
   display: flex;
   justify-content: center;
@@ -24,7 +17,7 @@ body {
   padding: 28px;
   border-radius: 28px;
   background: rgba(211, 151, 186, 0.35);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /*czat pomogl*/
   box-shadow: 0 10px 30px rgba(120, 60, 100, 0.25);
   color: white;
 }
@@ -65,7 +58,7 @@ body {
 
 .weather-main {
   display: grid;
-  grid-template-columns: 1.1fr 1.2fr 0.9fr;
+  grid-template-columns: 1.1fr 1.2fr 0.9fr; /*czat pomogl*/
   gap: 20px;
   align-items: center;
   margin-bottom: 30px;

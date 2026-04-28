@@ -99,10 +99,9 @@ function getForecast(city) {
         const card = document.createElement("div");
         card.classList.add("forecast-card");
 
-
         card.innerHTML = `
           <h3>${dayName}</h3>
-          <img src="${iconUrl}" alt="${item.weather[0].description}">
+          <img src="${iconUrl}">
           <div class="day-temp">${Math.round(item.main.temp)}°C</div>
           <div class="night-temp">${item.weather[0].description}</div>
         `;
@@ -112,6 +111,6 @@ function getForecast(city) {
     })
     .catch(error => {
       console.error(error);
-      alert("Nie udało się pobrać prognozy pogody.");
+      alert("Nie udało się pobrać prognozy pogody");
     });
 }
