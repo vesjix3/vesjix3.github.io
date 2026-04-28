@@ -32,11 +32,6 @@ function getCurrentWeather(city) {
       const utcNow = new Date();
       const cityTime = new Date(utcNow.getTime() + data.timezone * 1000);
 
-      const months = [
-        "STY", "LUT", "MAR", "KWI", "MAJ", "CZE",
-        "LIP", "SIE", "WRZ", "PAŹ", "LIS", "GRU"
-      ];
-
       const iconCode = data.weather[0].icon;
       const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
