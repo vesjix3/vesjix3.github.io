@@ -1,0 +1,150 @@
+body {
+    background-color: #803939;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    color: #C4BCBA;
+    background-color: #923A3A;
+    margin: 10px 0;
+    padding: 15px;
+}
+.paragraph {
+
+    border: 1px dotted white;
+}
+.listborder {
+    border: 1px dotted white;
+
+}
+ul {
+    font-family: "Times New Roman", Times, serif;
+    color: #C4BCBA;
+    background-color: #923A3A;
+    margin: 10px 0;
+    padding: 35px;
+}
+
+.header-bg {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 0;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h1 {
+    color: #BF3535;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    background-color: rgba(210, 197, 197, 0.33);
+    padding: 20px 290px;
+    margin: 0;
+    font-size: xxx-large;
+}
+
+h2,h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: #B12626;
+    max-width: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+
+footer {
+    background-color: #923A3A;
+    color: #C4BCBA;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #C4BCBA;
+    margin: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #923A3A;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #a14c4c;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 1.1rem;
+
+    }
+
+    .social-links a {
+        padding: 10px 15px;
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        padding: 5px 50px;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .social-links {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .social-links a {
+        padding: 6px 8px;
+        font-size: 1.2em;
+
+    }
+}
