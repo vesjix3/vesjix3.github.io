@@ -1,17 +1,14 @@
 <?php
-namespace App\Controller;
+namespace assets\src\Controller;
 
-use App\Exception\NotFoundException;
-use App\Model\Book;
-use App\Service\Router;
-use App\Service\Templating;
+use App\Exception\NotFoundException;use App\Model\Book;use App\Service\Router;use App\Service\Templating;
 
 class BookController
 {
 	public function indexAction(Templating $templating, Router $router): ?string
 	{
 		$books = Book::findAll();
-		return $templating->render('book/index.html.php', [
+		return $templating->render('book/index.ejs', [
 			'books' => $books,
 			'router' => $router,
 		]);
@@ -30,7 +27,7 @@ class BookController
 
 		$book = new Book();
 
-		return $templating->render('book/create.html.php', [
+		return $templating->render('book/create.ejs', [
 			'book' => $book,
 			'router' => $router,
 		]);
@@ -52,7 +49,7 @@ class BookController
 			return null;
 		}
 
-		return $templating->render('book/edit.html.php', [
+		return $templating->render('book/edit.ejs', [
 			'book' => $book,
 			'router' => $router,
 		]);
@@ -65,7 +62,7 @@ class BookController
 			throw new NotFoundException("Missing book with id $bookId");
 		}
 
-		return $templating->render('book/show.html.php', [
+		return $templating->render('book/show.ejs', [
 			'book' => $book,
 			'router' => $router,
 		]);
