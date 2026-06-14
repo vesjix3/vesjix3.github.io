@@ -1,0 +1,16 @@
+{
+  "main": "cdv-electron-main.js",
+  "name": "pl.edu.zut.wi.dh57893",
+  "displayName": "Hanna 57893",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "homepage": "https://www.wi.zut.edu.pl",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Hanna Drużga",
+    "email": "dh57893@zut.edu.pl"
+  },
+  "dependencies": {
+    "electron-devtools-installer": "^3.2.0"
+  }
+}

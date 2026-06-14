@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "weather.html",
+  "name": "Hanna 57893",
+  "short_name": "Hanna 57893",
+  "version": "pl.edu.zut.wi.dh57893",
+  "description": "Weather App",
+  "author": "Hanna Drużga"
+}
