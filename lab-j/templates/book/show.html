@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Szczegóły książki</h1>
+
+    <div class="book-details">
+        <h2>{{ book['title'] }}</h2>
+        <p><strong>Autor:</strong> {{ book['author'] }}</p>
+        <p><strong>ID:</strong> {{ book['id'] }}</p>
+    </div>
+
+    <hr>
+    <div class="actions">
+        <a href="{{ url_for('book_edit', id=book['id']) }}">Edytuj tę książkę</a> | 
+        <a href="{{ url_for('book_delete', id=book['id']) }}" onclick="return confirm('Czy na pewno chcesz usunąć tę książkę?')">Usuń książkę</a> | 
+        <br><br>
+        <a href="{{ url_for('book_index') }}">Powrót do listy</a>
+    </div>
+{% endblock %}
